@@ -54,8 +54,8 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
+  --color-primary: #995900;
+  --color-text: #2d1f03;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
@@ -75,6 +75,7 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fbfaf9;
 }
 
 body {
@@ -300,6 +301,7 @@ a:focus {
   margin-bottom: var(--spacing-0);
   min-width: 50px;
   border-radius: 100%;
+  transform: translateZ(0);
 }
 
 .blog-post header h1 {
@@ -329,5 +331,17 @@ a:focus {
   ul,
   ol {
     list-style-position: inside;
+  }
+}
+
+@media (min-width: 20rem) {
+  .main-heading {
+    font-size: var(--fontSize-4);
+  }
+}
+
+@media (min-width: 24rem) {
+  .main-heading {
+    font-size: var(--fontSize-5);
   }
 }
